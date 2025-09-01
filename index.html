@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Galeria de Imagens</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <h1>Galeria</h1>
+        <p class="subtitle"></p>
+    </header>
+
+
+    <main class="container">
+        <section class="gallery" aria-label="Galeria de imagens">
+            <figure>
+                <img src="images/photo1.jpg" alt="Descrição da foto 1">
+                <figcaption>1</figcaption>
+            </figure>
+
+
+            <figure>
+                <img src="images/photo2.jpg" alt="Descrição da foto 2">
+                <figcaption>2</figcaption>
+            </figure>
+
+
+            <figure>
+                <img src="images/photo3.jpg" alt="Descrição da foto 3">
+                <figcaption>3</figcaption>
+            </figure>
+
+
+            <figure>
+                <img src="images/photo4.jpg" alt="Descrição da foto 4">
+                <figcaption>4</figcaption>
+            </figure>
+
+
+            <figure>
+                <img src="images/photo5.jpg" alt="Descrição da foto 5">
+                <figcaption>5</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/photo5.jpg" alt="Descrição da foto 5">
+                <figcaption>6</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/photo6.jpg" alt="Descrição da foto 6">
+                <figcaption>7</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/photo5.jpg" alt="Descrição da foto 5">
+                <figcaption>8</figcaption>
+            </figure>
+
+        </section>
+    </main>
+
+
+    <footer class="site-footer">
+        <p>© <span id="year"></span>Galeria</p>
+    </footer>
+
+
+    <script>
+
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
