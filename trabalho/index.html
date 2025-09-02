@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid Masters: Dominando o Layout CSS</title>
+
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1>Grid Masters: Dominando o Layout CSS</h1>
+      <p class="subtitle">Exemplos práticos de CSS Grid</p>
+    </div>
+  </header>
+
+  <main class="container" id="main-content" role="main">
+    <!-- Explicação -->
+    <section class="explicacao" aria-labelledby="css-grid-heading">
+      <h2 id="css-grid-heading">O que é CSS Grid?</h2>
+      <p>
+        O <strong>CSS Grid</strong> é um sistema de layout <em>bidimensional</em> que organiza elementos em linhas e colunas.
+        Ele facilita a criação de layouts responsivos e flexíveis, sem a complexidade de métodos antigos como
+        <em>float</em> ou <em>position</em>.
+      </p>
+
+      <h2 id="diferencas-heading">Diferenças entre Grid e Flexbox</h2>
+      <ul aria-labelledby="diferencas-heading">
+        <li><strong>Flexbox:</strong> ideal para layouts em uma dimensão (linha <em>ou</em> coluna).</li>
+        <li><strong>Grid:</strong> ideal para duas dimensões (linha <em>e</em> coluna ao mesmo tempo).</li>
+      </ul>
+
+      <h2 id="propriedades-container-heading">Propriedades do Container Grid</h2>
+      <pre><code>
+.container {
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 100px auto 50px;
+  grid-template-areas:
+    "header header header"
+    "sidebar content content"
+    "footer footer footer";
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  align-content: space-between;
+  justify-content: space-around;
+}
+      </code></pre>
+
+      <h2 id="propriedades-itens-heading">Propriedades dos Itens Grid</h2>
+      <pre><code>
+.item1 {
+  grid-column: 1 / 3;   /* ocupa da coluna 1 até antes da 3 */
+  grid-row: 1 / 2;      /* ocupa da linha 1 até antes da 2 */
+  grid-area: header;    /* nome definido no grid-template-areas */
+  align-self: start;    /* sobrescreve align-items só para este item */
+  justify-self: end;    /* sobrescreve justify-items só para este item */
+}
+      </code></pre>
+
+      <h2 id="dicas-heading">Dicas e Melhores Práticas</h2>
+      <ul aria-labelledby="dicas-heading">
+        <li>Use <code>repeat()</code> e <code>auto-fit</code>/<code>auto-fill</code> para criar layouts responsivos.</li>
+        <li>Combine <strong>Grid</strong> e <strong>Flexbox</strong>: use Grid para a estrutura principal e Flexbox para alinhar elementos menores.</li>
+        <li>Prefira <code>fr</code> em vez de valores fixos (px) para colunas flexíveis.</li>
+        <li>Utilize <code>minmax()</code> para definir limites mínimos e máximos de largura/altura.</li>
+      </ul>
+    </section>
+
+    <!-- Galeria -->
+    <section class="gallery-section" aria-labelledby="galeria-heading"> 
+      <h2 id="equipe-heading">Galeria</h2>
+      <div class="gallery">
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.E7Ga7ou29TFl2pdZEF0ZxAHaE7?w=256&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Paisagem natural com montanhas ao fundo e um lago tranquilo">
+          <figcaption>Paisagem Serena</figcaption>
+        </figure>
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.jQyLxNz4qxcj43qDV4BgGwHaE7?w=252&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Cachoeira cristalina em meio a uma floresta verdejante">
+          <figcaption>Cachoeira Natural</figcaption>
+        </figure>
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.7hqXJPrCmQY0kVkzwb_HMQHaE7?w=264&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Vista aérea de um canyon com formações rochosas impressionantes">
+          <figcaption>Vista do Canyon</figcaption>
+        </figure>
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.aO06p8ZqrNFJaaTeoZHeCAHaE7?w=279&h=185&c=7&r=0&o=5&pid=1.7" alt="Praia tropical com areia branca e mar azul turquesa">
+          <figcaption>Paraíso Tropical</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="dashboard-section" aria-labelledby="equipe-heading">
+      <h2 id="equipe-heading">Dashboard</h2>
+      <div class="dashboard">
+        <article class="card-funcionario">
+          <img class="foto-funcionario"
+            src="https://storyblok-cdn.photoroom.com/f/191576/1176x882/f95162c213/profile_picture_hero_before.webp"
+            alt="Foto de Lucas">
+          <div class="info-funcionario">
+            <header>
+              <h3 class="nome-funcionario">Lucas</h3>
+              <p class="cargo-funcionario">Administrador</p>
+            </header>
+            <p class="descricao-funcionario">Sou administrador e gosto de organizar processos para que tudo funcione da melhor forma.</p>
+          </div>
+        </article>
+
+        <article class="card-funcionario">
+          <img class="foto-funcionario"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKh68tONsDWQwfdQE-tvczjSawF-6krhdd_zQxIPz59d4HGOrisa1nWoqG3GEYOQwTTZ8&usqp=CAU"
+            alt="Foto de Ana Paula">
+          <div class="info-funcionario">
+            <header>
+              <h3 class="nome-funcionario">Ana Paula</h3>
+              <p class="cargo-funcionario">Recursos Humanos</p>
+            </header>
+            <p class="descricao-funcionario">Me chamo Ana Paula e adoro ajudar pessoas a crescerem dentro da empresa.</p>
+          </div>
+        </article>
+
+        <article class="card-funcionario">
+          <img class="foto-funcionario"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2-Yb6GOCGW4MEaq315XfZgLN0PRsP2Vhpqw&s"
+            alt="Foto de Mariana Silva">
+          <div class="info-funcionario">
+            <header>
+              <h3 class="nome-funcionario">Mariana Silva</h3>
+              <p class="cargo-funcionario">Designer</p>
+            </header>
+            <p class="descricao-funcionario">Sou responsável pela criação de designs criativos e funcionais.</p>
+          </div>
+        </article>
+
+        <article class="card-funcionario">
+          <img class="foto-funcionario"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmv32psZknj9gsMFy_GgXiTC57WzaQPlTKw&s"
+            alt="Foto de João Mendes">
+          <div class="info-funcionario">
+            <header>
+              <h3 class="nome-funcionario">João Mendes</h3>
+              <p class="cargo-funcionario">Desenvolvedor</p>
+            </header>
+            <p class="descricao-funcionario">Olá! Sou João, trabalho no time de Desenvolvimento e adoro contribuir para o crescimento da equipe.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Blog -->
+    <section class="blog-section" aria-labelledby="blog-heading">
+      <h2 id="blog-heading">Artigos Recentes</h2>
+      <div class="grid-blog">
+        <article>
+          <h3>📖 Introdução ao Grid</h3>
+          <p>Conceitos básicos para começar com CSS Grid Layout.</p>
+        </article>
+        <article>
+          <h3>📖 Diferença entre Grid e Flexbox</h3>
+          <p>Entenda quando usar cada tecnologia.</p>
+        </article>
+        <article>
+          <h3>📖 Dicas e Melhores Práticas</h3>
+          <p>Aprenda técnicas avançadas de layout.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Grid Masters. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
