@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid Masters: Demonstrações Práticas</title>
+  <link rel="stylesheet" href="./css/demonstracao.css">
+</head>
+
+<body>
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1>Grid Masters: Demonstrações Práticas</h1>
+      <p class="subtitle">Exemplos de implementação com CSS Grid</p>
+    </div>
+  </header>
+
+  <main class="container" id="main-content" role="main">
+   
+    <a href="index.html" class="btn-voltar">← Voltar para a Explicação</a>
+
+
+    <section class="gallery-section" aria-labelledby="galeria-heading"> 
+      <h2 id="galeria-heading">Galeria com CSS Grid</h2>
+      <div class="gallery">
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.E7Ga7ou29TFl2pdZEF0ZxAHaE7?w=256&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Paisagem natural com montanhas ao fundo e um lago tranquilo">
+          <figcaption>Paisagem Serena</figcaption>
+        </figure>
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.jQyLxNz4qxcj43qDV4BgGwHaE7?w=252&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Cachoeira cristalina em meio a uma floresta verdejante">
+          <figcaption>Cachoeira Natural</figcaption>
+        </figure>
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.7hqXJPrCmQY0kVkzwb_HMQHaE7?w=264&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="Vista aérea de um canyon com formações rochosas impressionantes">
+          <figcaption>Vista do Canyon</figcaption>
+        </figure>
+        <figure>
+          <img src="https://th.bing.com/th/id/OIP.aO06p8ZqrNFJaaTeoZHeCAHaE7?w=279&h=185&c=7&r=0&o=5&pid=1.7" alt="Praia tropical com areia branca e mar azul turquesa">
+          <figcaption>Paraíso Tropical</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section class="dashboard-section" aria-labelledby="dashboard-heading">
+      <h2 id="dashboard-heading">Dashboard com CSS Grid</h2>
+      <div class="dashboard">
+        <article class="card-funcionario">
+          <img class="foto-funcionario"
+            src="https://storyblok-cdn.photoroom.com/f/191576/1176x882/f95162c213/profile_picture_hero_before.webp"
+            alt="Foto de Lucas">
+          <div class="info-funcionario">
+            <header>
+              <h3 class="nome-funcionario">Lucas</h3>
+              <p class="cargo-funcionario">Administrador</p>
+            </header>
+            <p class="descricao-funcionario">Sou administrador e gosto de organizar processos para que tudo funcione da melhor forma.</p>
+          </div>
+        </article>
+
+        <article class="card-funcionario">
+          <img class="foto-funcionario"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKh68tONsDWQwfdQE-tvczjSawF-6krhdd_zQxIPz59d4HGOrisa1nWoqG3GEYOQwTTZ8&usqp=CAU"
+            alt="Foto de Ana Paula">
+          <div class="info-funcionario">
+            <header>
+              <h3 class="nome-funcionario">Ana Paula</h3>
+              <p class="cargo-funcionario">Recursos Humanos</p>
+            </header>
+            <p class="descricao-funcionario">Me chamo Ana Paula e adoro ajudar pessoas a crescerem dentro da empresa.</p>
+          </div>
+        </article>
+
+        <article class="card-funcionario">
+          <img class="foto-funcionario"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2-Yb6GOCGW4MEaq315XfZgLN0PRsP2Vhpqw&s"
+            alt="Foto de Mariana Silva">
+          <div class="info-funcionario">
+            <header>
+              <h3 class="nome-funcionario">Mariana Silva</h3>
+              <p class="cargo-funcionario">Designer</p>
+            </header>
+            <p class="descricao-funcionario">Sou responsável pela criação de designs criativos e funcionais.</p>
+          </div>
+        </article>
+
+        <article class="card-funcionario">
+          <img class="foto-funcionario"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzmv32psZknj9gsMFy_GgXiTC57WzaQPlTKw&s"
+            alt="Foto de João Mendes">
+          <div class="info-funcionario">
+            <header>
+              <h3 class="nome-funcionario">João Mendes</h3>
+              <p class="cargo-funcionario">Desenvolvedor</p>
+            </header>
+            <p class="descricao-funcionario">Olá! Sou João, trabalho no time de Desenvolvimento e adoro contribuir para o crescimento da equipe.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Produtos -->
+    <section class="produtos-section" aria-labelledby="produtos-heading">
+      <h2 id="produtos-heading">Vitrine de Produtos com CSS Grid</h2>
+      <div class="produtos">
+        <article class="card-produto">
+          <img class="produto-imagem" src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Fones de ouvido premium">
+          <div class="produto-info">
+            <h3 class="produto-titulo">Fones de Ouvido Premium</h3>
+            <p class="produto-descricao">Som de alta qualidade com cancelamento de ruído ativo e design ergonômico.</p>
+            <p class="produto-preco">R$ 299,90</p>
+            <a href="#" class="btn-comprar">Adicionar ao Carrinho</a>
+          </div>
+        </article>
+
+        <article class="card-produto">
+          <img class="produto-imagem" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Smartwatch moderno">
+          <div class="produto-info">
+            <h3 class="produto-titulo">Smartwatch Esportivo</h3>
+            <p class="produto-descricao">Monitoramento de atividades físicas, notificações e resistência à água.</p>
+            <p class="produto-preco">R$ 399,90</p>
+            <a href="#" class="btn-comprar">Adicionar ao Carrinho</a>
+          </div>
+        </article>
+
+        <article class="card-produto">
+          <img class="produto-imagem" src="https://images.unsplash.com/photo-1491553895911-0055eca6402d" alt="Tênis esportivo">
+          <div class="produto-info">
+            <h3 class="produto-titulo">Tênis de Corrida</h3>
+            <p class="produto-descricao">Amortecimento avançado para maior conforto durante atividades físicas.</p>
+            <p class="produto-preco">R$ 249,90</p>
+            <a href="#" class="btn-comprar">Adicionar ao Carrinho</a>
+          </div>
+        </article>
+
+        <article class="card-produto">
+          <img class="produto-imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_U525fHRUapKcAv_OeSbwaU3tQBXajcco0w&s" alt="Óculos de sol">
+          <div class="produto-info">
+            <h3 class="produto-titulo">Óculos de Sol Elegante</h3>
+            <p class="produto-descricao">Proteção UV completa com armação leve e design moderno.</p>
+            <p class="produto-preco">R$ 179,90</p>
+            <a href="#" class="btn-comprar">Adicionar ao Carrinho</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© <span id="year"></span> Vasco Da Gama. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
+</html>
