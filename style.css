@@ -96,3 +96,62 @@ figcaption {
     margin: 20px auto
   }
 }
+
+
+
+
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-funcionario {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+.foto-funcionario {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.cabecalho-funcionario .nome-funcionario {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.cabecalho-funcionario .cargo-funcionario {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.descricao-funcionario {
+  font-size: .8rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .card-funcionario {
+      grid-template-columns: 1fr;
+  }
+
+  .foto-funcionario {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto;
+  }
+}
